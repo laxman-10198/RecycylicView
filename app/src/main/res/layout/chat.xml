@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tt"
+    android:background="@color/colorMainActivity"
+    tools:context=".chat">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t1"
+        android:background="@color/colorToolbar">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow_icon"
+                android:layout_marginTop="@dimen/ten"
+                android:src="@drawable/chevron_selected"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:src="@drawable/application_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginLeft="75dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/massagetext_size" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/button_recever"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/t1"
+        android:id="@+id/relativeLayout1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_image"
+        android:src="@drawable/pic"
+        android:layout_margin="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/text1"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/massagetext_size"
+        android:layout_toRightOf="@+id/chat_image"
+        android:text="@string/receive_text"
+        android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:text="@string/recier_time"
+            android:gravity="end"
+            android:textSize="@dimen/timetext_size"
+            android:id="@+id/chat_time"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_below="@+id/chat_image"
+            android:background="@drawable/background_bottom"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/relativeLayout1"
+        android:background="@drawable/receiver_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/massagetext_size"
+            android:text="@string/sender_text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_chat"
+            android:text="@string/sender_time"
+            android:gravity="end"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorWhite"
+            android:paddingBottom="5dp"
+            android:textSize="@dimen/timetext_size"
+            android:paddingRight="15dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56.5dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:background="@color/colorlightWhite"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:layout_margin="12dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/massagetext_size"
+            android:layout_toLeftOf="@+id/serch_icon"
+            android:background="@drawable/serch_bar"
+            android:hint="Type Here.." />
+
+        <ImageView
+            android:id="@+id/serch_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send_24px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

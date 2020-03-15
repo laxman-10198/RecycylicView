@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainActivity"
+    tools:context=".Check_In">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBar1"
+        android:background="@color/colorToolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/arrow_icon"
+                android:layout_marginTop="@dimen/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron_selected" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_height="wrap_content"
+                android:src="@drawable/application_icon"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/five"
+                android:text="check in"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/ten"
+        android:elevation="1dp"
+        android:background="@drawable/fan_button">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write here.."
+                android:paddingLeft="@dimen/five"
+                android:backgroundTint="@color/colorToolbar"
+                android:id="@+id/checkin_editText"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkin_editText"
+                android:src="@drawable/ic_add_to_photos_24px"
+                android:layout_marginTop="@dimen/five"
+                android:id="@+id/checkin_imageView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkin_editText"
+                android:layout_toRightOf="@id/checkin_imageView"
+                android:text="Photo"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginTop="@dimen/five"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkinString"
+        android:layout_marginTop="@dimen/ten"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:background="@drawable/fan_button"
+        android:hint="search"
+        android:elevation="1dp"
+        android:textSize="16sp"
+        android:padding="@dimen/five"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/ten"
+        android:background="@drawable/fan_button">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/ten">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter seat information*"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(Fans in same stand will be able to see you)"
+            android:layout_marginTop="@dimen/ten"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorToolbar"
+                android:hint="Choose stand"
+                android:drawableRight="@drawable/ic_expand_more_24px" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorToolbar"
+                android:hint="Choose stand"
+                android:drawableRight="@drawable/ic_expand_more_24px"
+                android:id="@+id/checkin_editText2"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your seat no."
+                android:drawablePadding="@dimen/five"
+                android:backgroundTint="@color/colorToolbar"
+                android:drawableLeft="@drawable/ic_event_seat_24px" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/ten">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Ticket Photo"
+                android:textSize="18sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:src="@drawable/ic_add_to_photos_24px"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:hint="Share"
+            android:textColorHint="@color/colorWhite"
+            android:background="@drawable/receiver_back"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

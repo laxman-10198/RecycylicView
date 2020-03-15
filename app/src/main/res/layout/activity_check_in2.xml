@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckIn2"
+    android:background="@color/colorMainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBar11"
+        android:background="@color/colorToolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/arrow_icon"
+                android:layout_marginTop="@dimen/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron_selected" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_height="wrap_content"
+                android:src="@drawable/application_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/five"
+                android:text="IPL 2019 - Match 23…."
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="63.5dp"
+                    android:layout_height="30.5dp"
+                    android:background="@drawable/button_skip"
+                    android:text="Save"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginRight="@dimen/ten"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorlightWhite" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CheckIn2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="@dimen/ten"
+        android:id="@+id/Ipl_text1"
+        android:lineSpacingExtra="2dp"
+        android:layout_below="@+id/toolBar11"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/ten"
+        android:id="@+id/Ipl_relativeLayout1"
+        android:layout_below="@+id/Ipl_text1"
+        android:background="@drawable/fan_button"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="@string/CheckIn3"
+                android:lineSpacingExtra="3dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/twenty"
+            android:drawableTint="#2376BB"
+            android:textColor="#2376BB"
+            android:id="@+id/Ipl_text2"
+            android:drawableTop="@drawable/ic_place_black_24dp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/ten"
+        android:layout_below="@+id/Ipl_relativeLayout1"
+        android:background="@drawable/fan_button">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginTop="@dimen/ten">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_done_black_24dp"
+                    android:layout_margin="@dimen/ten"
+                    android:background="@color/colorToolbar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I’ve purchased ticket too"
+                android:textSize="18sp"
+                android:layout_margin="@dimen/ten"
+                android:drawablePadding="@dimen/ten"
+                android:backgroundTint="@color/colorToolbar" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter seat information*"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(Fans in same stand will be able to see you)"
+                android:layout_marginTop="@dimen/ten"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorToolbar"
+                android:hint="Choose stand"
+                android:drawableRight="@drawable/ic_expand_more_24px" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorToolbar"
+                android:hint="Choose stand"
+                android:drawableRight="@drawable/ic_expand_more_24px"
+                android:id="@+id/checkin_editText2"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your seat no."
+                android:drawablePadding="@dimen/five"
+                android:backgroundTint="@color/colorToolbar"
+                android:drawableLeft="@drawable/ic_event_seat_24px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/ten">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Ticket Photo"
+                android:textSize="18sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:src="@drawable/ic_add_to_photos_24px"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

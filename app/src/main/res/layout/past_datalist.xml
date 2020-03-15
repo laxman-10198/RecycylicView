@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_recever"
+    android:elevation="2dp"
+    android:layout_margin="@dimen/five"
+    android:id="@+id/past_datalist1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IPL 2019-Match 23"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:id="@+id/upc_text1"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginLeft="@dimen/ten"
+                android:textColor="#1476BD"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:text="Mohali Stadium, Punjab"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/twenty">
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_relativeLayout2"
+                    android:layout_marginTop="@dimen/ten">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:src="@drawable/csk"
+                        android:id="@+id/live_image1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/live_text2"
+                        android:text="CSk"
+                        android:textAlignment="center"
+                        android:layout_below="@+id/live_image1"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/live_relativeLayout2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/live_scor1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:text="178/5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/live_scor1"
+                        android:text="20ov"
+                        android:textSize="12sp"
+                        android:textAlignment="center"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vs"
+                android:textSize="16sp"
+                android:textColor="#1476BD"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/twenty"
+                android:layout_alignParentRight="true">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/five"
+                    android:layout_toLeftOf="@+id/live_relativeLayout1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="002"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:id="@+id/live_scor2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/live_over1"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/live_scor2"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:text="50.66over"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/ten"
+                    android:id="@+id/live_relativeLayout1">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:src="@drawable/kx"
+                        android:id="@+id/live_image2"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/live_text3"
+                        android:textAlignment="center"
+                        android:layout_below="@id/live_image2"
+                        android:text="KXIP" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BABABA"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KX1P won by 6 wicket"
+            android:textColor="#1476BD"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/five"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="@dimen/five"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

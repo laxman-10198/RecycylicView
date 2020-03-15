@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainActivity"
+    tools:context=".Upcoming">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBar2"
+        android:background="@color/colorToolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/arrow_icon"
+                android:layout_marginTop="@dimen/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron_selected" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_height="wrap_content"
+                android:src="@drawable/application_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="@dimen/five"
+                android:text="Upcoming"
+                android:id="@+id/toolBar_title"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar2"
+        app:tabIndicatorColor="#1476BD"
+        app:tabSelectedTextColor="#1476BD"
+        android:background="@color/colorWhite"
+        app:tabInlineLabel="true"
+        android:id="@+id/upcoming_tabLayout1">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_schedule_24px"
+            android:text="@string/upcoming"
+            android:id="@+id/tt3"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:icon="@drawable/ic_live_tv_24px"
+            android:layout_height="wrap_content"
+            android:text="@string/Live"
+            android:id="@+id/tt1"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Past"
+            android:id="@+id/tt2"
+            android:foregroundTint="@color/colorWhite"
+            android:icon="@drawable/ic_check_box_black_24dp"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewpager1"
+        android:layout_below="@+id/upcoming_tabLayout1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Game_List_Recycler"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+</RelativeLayout>

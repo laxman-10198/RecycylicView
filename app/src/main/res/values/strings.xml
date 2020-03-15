@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">RecycylicView</string>
+    <string name="User_name">Nikhil Aneja \t liked your post "Here is my champion winning his first trophy".</string>
+    <string name="user_massage">liked your post "Here is my champion winning his first trophy."</string>
+    <string name="user_timer">32 minute ago</string>
+    <string name="recier_time">12:30PM</string>
+    <string name="sender_time">12:40PM</string>
+    <string name="receive_text">My champion won his maiden trophy.</string>
+    <string name="sender_text">Cool Man. Congrats.</string>
+    <string name="name_receiver">Nikhil Aneja</string>
+    <string name="notifiaction">Here is my champ winning…</string>
+    <string name="createFanProfile">Create Fan Profile</string>
+    <string name="fan_text1">What would you love to be called?</string>
+    <string name="enterName">Enter your name</string>
+    <string name="fan_connectionOption">Where would love to be connected?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="send_button">Send OTP</string>
+    <string name="checkinString">Tag Sports, Players, teams &amp; other users here</string>
+    <string name="CheckIn2">Choose location from where you’ll be going to watch match and be
+                          visible to nearby fans. *Exact location will not be shared</string>
+    <string name="CheckIn3">DLF Center Mall, Shalimar Bagh, New Delhi -
+            110021, India</string>
+    <string name="less_number">&#60;300</string>
+
+
+    <string name="upcoming">Upcoming</string>
+    <string name="Live">Live</string>
+    <string name="Past">Past</string>
+
+</resources>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainActivity"
+    tools:context=".CreateFanProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fan_relativeLay1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbar"
+            android:id="@+id/toolbar1">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/arrow_icon"
+                        android:layout_marginTop="@dimen/ten"
+                        android:src="@drawable/chevron_selected"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twenty"
+                        android:src="@drawable/application_icon"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifty"
+                        android:text="@string/createFanProfile"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/massagetext_size"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+         </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/fan_relativeLay1"
+        android:id="@+id/fan_relativeLay2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/fan_button"
+            android:id="@+id/fan_relativeLay3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fan_text1"
+                android:layout_marginTop="@dimen/ten"
+                android:text="@string/fan_text1"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/fan_editText1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/enterName" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fan_relativeLay4"
+            android:layout_below="@+id/fan_relativeLay3"
+            android:background="@drawable/fan_button"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_margin="@dimen/ten"
+                android:id="@+id/linearLay1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fan_text2"
+                android:textSize="16sp"
+                android:text="@string/fan_connectionOption"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/fan_radioGp"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_below="@+id/fan_text2">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="16sp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="30dp"
+                    android:text="Phone Number"/>
+            </RadioGroup>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fan_editText2"
+                android:hint="Enter Mail Id"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@null"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:id="@+id/fan_view2"
+                android:background="@color/colorPrimary"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/linearLay1"
+                android:visibility="visible">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Choose your country"
+                    android:background="@null"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/fan_editText3"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:id="@+id/fab"
+                    android:background="@color/colorPrimary"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter phone number"
+                    android:background="@null"
+                    android:id="@+id/fan_editText4"
+                    android:layout_marginTop="20dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLay2"
+        android:layout_below="@+id/fan_relativeLay2">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/receiver_back"
+            android:text="Send OTP"
+            android:layout_gravity="center"
+            android:textColor="@color/colorlightWhite"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="00dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="00dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="or"/>
+            <View
+                android:layout_width="00dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLay3"
+        android:gravity="center"
+        android:layout_below="@+id/linearLay2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/blue_button">
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN WITH FACEBOOK"
+            android:background="@drawable/blue_button"
+            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/image"
+            android:drawablePadding="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="@dimen/twenty"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLay3">
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a member?"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/ten"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/twenty"
+            android:textColor="@color/colorlightWhite"
+            android:background="@drawable/button_for_login"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

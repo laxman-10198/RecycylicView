@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five">
+        <RelativeLayout
+            android:layout_width="175dp"
+            android:background="@drawable/fan_star_stoke_backgd"
+            android:layout_height="50dp"
+            android:id="@+id/fanStar_relLayout1">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/fanStar_imageView"
+                android:src="@drawable/viratkohil"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/fanStar_Text1"
+                android:text="Virat Kohli"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/five"
+                android:layout_toRightOf="@+id/fanStar_imageView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/fanStar_Text2"
+                android:text="Cricket Player"
+                android:layout_marginTop="@dimen/five"
+                android:layout_below="@id/fanStar_Text1"
+                android:layout_toRightOf="@+id/fanStar_imageView"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/five"
+                android:layout_toRightOf="@+id/fanStar_Text2"
+                android:src="@drawable/icn_like"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

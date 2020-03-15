@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainActivity"
+    tools:context=".BeAStarFan">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBar1"
+        android:background="@color/colorToolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/arrow_icon"
+                android:layout_marginTop="@dimen/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chevron_selected" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/twenty"
+                android:layout_height="wrap_content"
+                android:src="@drawable/application_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/five"
+                android:text="Be a Star Fan"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="63.5dp"
+                android:layout_height="30.5dp"
+                android:background="@drawable/button_skip"
+                android:text="Skip"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorlightWhite" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar1"
+        android:id="@+id/fanStar_retiveLayout1"
+        android:layout_margin="@dimen/ten">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/ten"
+            android:background="@drawable/fan_button"
+            android:id="@+id/fanStar_linearLayout1">
+
+
+            <TextView
+                android:id="@+id/fan_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:text="Where are you from?"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/fan_editText1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Choose your country" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Choose state" />
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_marginTop="@dimen/fifteen"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Choose city" />
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/information_button"
+            android:layout_alignParentRight="true"
+            android:elevation="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="#2376BB"
+                android:layout_centerInParent="true"
+                android:text="!"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/fan_button"
+            android:padding="@dimen/ten"
+            android:orientation="vertical"
+            android:id="@+id/fanStar_linearLayout2"
+            android:layout_below="@+id/fanStar_linearLayout1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:text="When were you born?"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:text="(See which player shares same birth date) "
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:text="November 11, 1987"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#3576B7"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:text="You share your B’day with : "
+                android:textSize="18sp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="@dimen/ten"
+                android:id="@+id/recylerView1">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_below="@+id/fanStar_linearLayout1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:id="@+id/fanStar_calender"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/ic_date_range_24px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fanStar_linearLayout2"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/ten"
+            android:padding="@dimen/ten"
+            android:background="@drawable/fan_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your gender"
+                android:textStyle="bold"
+                android:padding="@dimen/five"
+                android:textSize="18sp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:textSize="16sp"
+                    android:layout_marginRight="@dimen/twenty"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textSize="16sp"
+                    android:layout_marginRight="@dimen/twenty"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="16sp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="1dp"
+            android:layout_below="@+id/fanStar_linearLayout2"
+            android:background="@drawable/information_button"
+            android:layout_alignParentRight="true"
+            android:elevation="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#2376BB"
+                android:text="!"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/fanStar_retiveLayout1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/receiver_back"
+            android:text="Choose your favourite sports"
+            android:textSize="18sp"
+            android:textColor="@color/colorlightWhite"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

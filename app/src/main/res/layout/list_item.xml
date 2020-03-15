@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout1"
+    android:background="@color/colorMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout3"
+        android:layout_margin="@dimen/five"
+        android:background="@drawable/button_recever">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic"
+        android:layout_marginTop="@dimen/ten"
+        android:paddingLeft="@dimen/five"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/five"
+        android:layout_marginRight="@dimen/five"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingLeft="25dp"
+        android:paddingTop="@dimen/ten"
+        android:text="@string/User_name" />
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_toRightOf="@+id/imageView"
+        android:paddingLeft="@dimen/twenty"
+        android:text="@string/user_timer"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/twentyfour"
+            android:layout_height="@dimen/twentyfour"
+            android:gravity="center"
+            android:layout_marginTop="38dp"
+            android:layout_marginLeft="42dp"
+            android:background="@drawable/border">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="@dimen/five"
+                android:src="@drawable/heart" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="@dimen/five"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="@dimen/twelve"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_more_vert_24px"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

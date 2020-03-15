@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/live_datalist"
+    android:layout_margin="@dimen/five"
+    android:elevation="1dp"
+    android:background="@drawable/button_recever">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IPL 2019-Match 23"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:id="@+id/upc_text1"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginLeft="@dimen/ten"
+                android:textColor="#1476BD"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:text="Mohali Stadium, Punjab"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/twenty">
+
+                    <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_relativeLayout2"
+                    android:layout_marginTop="@dimen/ten">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:src="@drawable/csk"
+                    android:id="@+id/live_image1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_text2"
+                    android:text="CSk"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/live_image1"/>
+                </RelativeLayout>
+
+                    <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/live_relativeLayout2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_scor1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:text="178/5"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/live_scor1"
+                    android:text="20ov"
+                    android:textSize="12sp"
+                    android:textAlignment="center"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vs"
+                android:textSize="16sp"
+                android:textColor="#1476BD"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/twenty"
+                android:layout_alignParentRight="true">
+
+                    <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/five"
+                    android:layout_toLeftOf="@+id/live_relativeLayout1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="002"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/live_scor2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_over1"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/live_scor2"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="50.66over"/>
+                </RelativeLayout>
+
+                    <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/ten"
+                    android:id="@+id/live_relativeLayout1">
+               <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:src="@drawable/kx"
+                    android:id="@+id/live_image2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/live_text3"
+                    android:textAlignment="center"
+                    android:layout_below="@id/live_image2"
+                    android:text="KXIP" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BABABA"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KX1P requires 29 to win from 33 balls"
+            android:textColor="#1476BD"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/five"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maxwell 30*(17)"
+                android:textSize="12sp"
+                android:id="@+id/live_player"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marsh 5(4)"
+                android:layout_marginLeft="@dimen/ten"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/live_player"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:text="Bravo 24/2(2.3)"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BABABA"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginTop="@dimen/five"
+            android:layout_marginRight="@dimen/twenty"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/five">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/upc_image3"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginLeft="@dimen/five"
+                android:src="@drawable/ic_people_24px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/upc_image3"
+                android:text="4.5k Fan's in stadium"
+                android:textSize="14sp"
+                android:id="@+id/upc_text4"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_marginTop="@dimen/ten"
+                android:textColor="#2376BB" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Check in stadium"
+                    android:elevation=".05dp"
+                    android:textSize="12sp"
+                    android:drawablePadding="@dimen/five"
+                    android:padding="@dimen/ten"
+                    android:textColorHint="@color/colorWhite"
+                    android:background="@drawable/upc_button1"
+                    android:drawableLeft="@drawable/ic_person_pin_circle_24px"
+                    android:layout_marginRight="@dimen/ten"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

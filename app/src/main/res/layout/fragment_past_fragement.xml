@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainActivity"
+    tools:context=".Past_fragement">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/pastFrag_relLay1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:id="@+id/live_linearLayout1"
+            android:layout_below="@+id/upcoming_tabLayout1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/ten">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date_range_24px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:text="Feb 1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:src="@drawable/ic_date_range_24px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:text="Feb 2"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:src="@drawable/ic_date_range_24px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:text="Mar 1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twenty"
+                    android:src="@drawable/ic_date_range_24px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:text="Mar 2"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/live_linearLayout1"
+            android:layout_margin="@dimen/five"
+            android:background="@drawable/button_recever"
+            android:elevation="0.5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/upcoming_linearLayout2"
+                android:layout_margin="@dimen/ten">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cricket"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cricket"
+                    android:textColor="@color/colorToolbar"
+                    android:textSize="23sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/twenty"
+                    android:id="@+id/past_arrow_imageView"
+                    android:src="@drawable/ic_expand_less_24px"/>
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:id="@+id/past_recyclerview"
+                android:layout_below="@+id/upcoming_linearLayout2"
+                android:layout_margin="@dimen/five">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
